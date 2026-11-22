@@ -1,0 +1,5671 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/Patient/SYN-0001",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "SYN-0001",
+        "identifier": [
+          {
+            "system": "http://example.org/careflow/synthetic-patient-id",
+            "value": "SYN-0001"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Whitcombe",
+            "given": [
+              "Eleanor"
+            ]
+          }
+        ],
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr",
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        },
+        "gender": "female",
+        "birthDate": "1957-03-14",
+        "address": [
+          {
+            "city": "Northbridge"
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "text": "English"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Encounter/ENC-0001",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ENC-0001",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "period": {
+          "start": "2023-02-06",
+          "end": "2023-02-06"
+        },
+        "reasonCode": [
+          {
+            "text": "Annual diabetes review"
+          }
+        ],
+        "type": [
+          {
+            "text": "Diabetes clinic"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Encounter/ENC-0002",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ENC-0002",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "period": {
+          "start": "2023-08-21",
+          "end": "2023-08-21"
+        },
+        "reasonCode": [
+          {
+            "text": "Diabetes and kidney function review"
+          }
+        ],
+        "type": [
+          {
+            "text": "Diabetes clinic"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Encounter/ENC-0003",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ENC-0003",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "period": {
+          "start": "2024-03-11",
+          "end": "2024-03-11"
+        },
+        "reasonCode": [
+          {
+            "text": "Blood pressure review"
+          }
+        ],
+        "type": [
+          {
+            "text": "General medicine clinic"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Encounter/ENC-0004",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ENC-0004",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "IMP",
+          "display": "inpatient encounter"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "period": {
+          "start": "2024-11-04",
+          "end": "2024-11-09"
+        },
+        "reasonCode": [
+          {
+            "text": "Lower respiratory tract infection"
+          }
+        ],
+        "type": [
+          {
+            "text": "Acute medicine"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Encounter/ENC-0005",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ENC-0005",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "period": {
+          "start": "2025-06-16",
+          "end": "2025-06-16"
+        },
+        "reasonCode": [
+          {
+            "text": "Diabetes review"
+          }
+        ],
+        "type": [
+          {
+            "text": "Diabetes clinic"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Encounter/ENC-0006",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ENC-0006",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "period": {
+          "start": "2026-02-23",
+          "end": "2026-02-23"
+        },
+        "reasonCode": [
+          {
+            "text": "Kidney clinic review"
+          }
+        ],
+        "type": [
+          {
+            "text": "Renal clinic"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Encounter/ENC-0007",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "ENC-0007",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "period": {
+          "start": "2026-10-19",
+          "end": "2026-10-19"
+        },
+        "reasonCode": [
+          {
+            "text": "Routine diabetes and kidney review"
+          }
+        ],
+        "type": [
+          {
+            "text": "Diabetes clinic"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/CON-0001",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "CON-0001",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "code": {
+          "text": "Hypertension",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertension"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "onsetDateTime": "2012-09-01"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/CON-0002",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "CON-0002",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "code": {
+          "text": "Type 2 diabetes mellitus",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44054006",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "onsetDateTime": "2016-05-10"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/CON-0003",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "CON-0003",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "code": {
+          "text": "Chronic kidney disease stage 3",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "433144002",
+              "display": "Chronic kidney disease stage 3"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "onsetDateTime": "2023-08-21",
+        "note": [
+          {
+            "text": "Recorded at clinic review."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/CON-0004",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "CON-0004",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "code": {
+          "text": "Lower respiratory tract infection"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "onsetDateTime": "2024-11-04",
+        "note": [
+          {
+            "text": "Recorded as resolved in the discharge summary."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0032",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0032",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "C-reactive protein",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 86.0,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/L"
+        },
+        "referenceRange": [
+          {
+            "high": {
+              "value": 5.0,
+              "unit": "mg/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/L"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0043",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0043",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "C-reactive protein",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-08",
+        "valueQuantity": {
+          "value": 22.0,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/L"
+        },
+        "referenceRange": [
+          {
+            "high": {
+              "value": 5.0,
+              "unit": "mg/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/L"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0001",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0001",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Creatinine",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "effectiveDateTime": "2023-02-06",
+        "valueQuantity": {
+          "value": 1.1,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.1,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0010",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0010",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Creatinine",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "effectiveDateTime": "2023-08-21",
+        "valueQuantity": {
+          "value": 1.3,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.1,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0019",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0019",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Creatinine",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "effectiveDateTime": "2024-03-11",
+        "valueQuantity": {
+          "value": 1.3,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.1,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0028",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0028",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Creatinine",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 1.9,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.1,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0039",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0039",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Creatinine",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-08",
+        "valueQuantity": {
+          "value": 1.5,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.1,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0047",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0047",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Creatinine",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "effectiveDateTime": "2025-01-06",
+        "valueQuantity": {
+          "value": 1.5,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.1,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0050",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0050",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Creatinine",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "effectiveDateTime": "2025-06-16",
+        "valueQuantity": {
+          "value": 1.4,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.1,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0059",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0059",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Creatinine",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0006"
+        },
+        "effectiveDateTime": "2026-02-23",
+        "valueQuantity": {
+          "value": 1.5,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.1,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0068",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0068",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Creatinine",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0007"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueQuantity": {
+          "value": 1.5,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.1,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0005",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0005",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Glucose (plasma)",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7",
+              "display": "Glucose (plasma)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "effectiveDateTime": "2023-02-06",
+        "valueQuantity": {
+          "value": 8.9,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0014",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0014",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Glucose (plasma)",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7",
+              "display": "Glucose (plasma)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "effectiveDateTime": "2023-08-21",
+        "valueQuantity": {
+          "value": 8.1,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0023",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0023",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Glucose (plasma)",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7",
+              "display": "Glucose (plasma)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "effectiveDateTime": "2024-03-11",
+        "valueQuantity": {
+          "value": 7.6,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0054",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0054",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Glucose (plasma)",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7",
+              "display": "Glucose (plasma)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "effectiveDateTime": "2025-06-16",
+        "valueQuantity": {
+          "value": 9.2,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0063",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0063",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Glucose (plasma)",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7",
+              "display": "Glucose (plasma)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0006"
+        },
+        "effectiveDateTime": "2026-02-23",
+        "valueQuantity": {
+          "value": 8.0,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0072",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0072",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Glucose (plasma)",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7",
+              "display": "Glucose (plasma)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0007"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueQuantity": {
+          "value": 7.4,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0015",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0015",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Potassium",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "effectiveDateTime": "2023-08-21",
+        "valueQuantity": {
+          "value": 4.6,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.5,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            },
+            "high": {
+              "value": 5.3,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0031",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0031",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Potassium",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 5.4,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.5,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            },
+            "high": {
+              "value": 5.3,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0042",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0042",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Potassium",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-08",
+        "valueQuantity": {
+          "value": 4.9,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.5,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            },
+            "high": {
+              "value": 5.3,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0049",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0049",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Potassium",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "effectiveDateTime": "2025-01-06",
+        "valueQuantity": {
+          "value": 4.7,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.5,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            },
+            "high": {
+              "value": 5.3,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0064",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0064",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Potassium",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0006"
+        },
+        "effectiveDateTime": "2026-02-23",
+        "valueQuantity": {
+          "value": 4.8,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.5,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            },
+            "high": {
+              "value": 5.3,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0009",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0009",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Body weight",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "effectiveDateTime": "2023-02-06",
+        "valueQuantity": {
+          "value": 82.5,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0027",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0027",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Body weight",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "effectiveDateTime": "2024-03-11",
+        "valueQuantity": {
+          "value": 81.0,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0058",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0058",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Body weight",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "effectiveDateTime": "2025-06-16",
+        "valueQuantity": {
+          "value": 79.2,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0076",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0076",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Body weight",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0007"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueQuantity": {
+          "value": 78.4,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0003",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0003",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "HbA1c",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "HbA1c"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "effectiveDateTime": "2023-02-06",
+        "valueQuantity": {
+          "value": 7.8,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0012",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0012",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "HbA1c",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "HbA1c"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "effectiveDateTime": "2023-08-21",
+        "valueQuantity": {
+          "value": 7.4,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0021",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0021",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "HbA1c",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "HbA1c"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "effectiveDateTime": "2024-03-11",
+        "valueQuantity": {
+          "value": 7.1,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0052",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0052",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "HbA1c",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "HbA1c"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "effectiveDateTime": "2025-06-16",
+        "valueQuantity": {
+          "value": 7.6,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0061",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0061",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "HbA1c",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "HbA1c"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0006"
+        },
+        "effectiveDateTime": "2026-02-23",
+        "valueQuantity": {
+          "value": 7.2,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0070",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0070",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "HbA1c",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "HbA1c"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0007"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueQuantity": {
+          "value": 6.9,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0037",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0037",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Oxygen saturation",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59408-5",
+              "display": "Oxygen saturation"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 93.0,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0045",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0045",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Oxygen saturation",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59408-5",
+              "display": "Oxygen saturation"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-08",
+        "valueQuantity": {
+          "value": 96.0,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0002",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0002",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "eGFR",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62238-1",
+              "display": "eGFR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "effectiveDateTime": "2023-02-06",
+        "valueQuantity": {
+          "value": 56.0,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/{1.73_m2}"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 60.0,
+              "unit": "mL/min/1.73m2",
+              "system": "http://unitsofmeasure.org",
+              "code": "mL/min/{1.73_m2}"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0011",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0011",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "eGFR",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62238-1",
+              "display": "eGFR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "effectiveDateTime": "2023-08-21",
+        "valueQuantity": {
+          "value": 46.0,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/{1.73_m2}"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 60.0,
+              "unit": "mL/min/1.73m2",
+              "system": "http://unitsofmeasure.org",
+              "code": "mL/min/{1.73_m2}"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0020",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0020",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "eGFR",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62238-1",
+              "display": "eGFR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "effectiveDateTime": "2024-03-11",
+        "valueQuantity": {
+          "value": 45.0,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/{1.73_m2}"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 60.0,
+              "unit": "mL/min/1.73m2",
+              "system": "http://unitsofmeasure.org",
+              "code": "mL/min/{1.73_m2}"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0029",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0029",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "eGFR",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62238-1",
+              "display": "eGFR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 29.0,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/{1.73_m2}"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 60.0,
+              "unit": "mL/min/1.73m2",
+              "system": "http://unitsofmeasure.org",
+              "code": "mL/min/{1.73_m2}"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0040",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0040",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "eGFR",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62238-1",
+              "display": "eGFR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-08",
+        "valueQuantity": {
+          "value": 38.0,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/{1.73_m2}"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 60.0,
+              "unit": "mL/min/1.73m2",
+              "system": "http://unitsofmeasure.org",
+              "code": "mL/min/{1.73_m2}"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0048",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0048",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "eGFR",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62238-1",
+              "display": "eGFR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "effectiveDateTime": "2025-01-06",
+        "valueQuantity": {
+          "value": 38.0,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/{1.73_m2}"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 60.0,
+              "unit": "mL/min/1.73m2",
+              "system": "http://unitsofmeasure.org",
+              "code": "mL/min/{1.73_m2}"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0051",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0051",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "eGFR",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62238-1",
+              "display": "eGFR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "effectiveDateTime": "2025-06-16",
+        "valueQuantity": {
+          "value": 41.0,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/{1.73_m2}"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 60.0,
+              "unit": "mL/min/1.73m2",
+              "system": "http://unitsofmeasure.org",
+              "code": "mL/min/{1.73_m2}"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0060",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0060",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "eGFR",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62238-1",
+              "display": "eGFR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0006"
+        },
+        "effectiveDateTime": "2026-02-23",
+        "valueQuantity": {
+          "value": 38.0,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/{1.73_m2}"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 60.0,
+              "unit": "mL/min/1.73m2",
+              "system": "http://unitsofmeasure.org",
+              "code": "mL/min/{1.73_m2}"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0069",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0069",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "eGFR",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "62238-1",
+              "display": "eGFR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0007"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueQuantity": {
+          "value": 37.0,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/{1.73_m2}"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 60.0,
+              "unit": "mL/min/1.73m2",
+              "system": "http://unitsofmeasure.org",
+              "code": "mL/min/{1.73_m2}"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0033",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0033",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "White cell count",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6690-2",
+              "display": "White cell count"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 14.8,
+          "unit": "x10^9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*9/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 4.0,
+              "unit": "x10^9/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "10*9/L"
+            },
+            "high": {
+              "value": 11.0,
+              "unit": "x10^9/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "10*9/L"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0044",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0044",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "White cell count",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6690-2",
+              "display": "White cell count"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-08",
+        "valueQuantity": {
+          "value": 9.6,
+          "unit": "x10^9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*9/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 4.0,
+              "unit": "x10^9/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "10*9/L"
+            },
+            "high": {
+              "value": 11.0,
+              "unit": "x10^9/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "10*9/L"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0004",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0004",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Haemoglobin",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Haemoglobin"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "effectiveDateTime": "2023-02-06",
+        "valueQuantity": {
+          "value": 12.4,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0013",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0013",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Haemoglobin",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Haemoglobin"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "effectiveDateTime": "2023-08-21",
+        "valueQuantity": {
+          "value": 12.1,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0022",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0022",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Haemoglobin",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Haemoglobin"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "effectiveDateTime": "2024-03-11",
+        "valueQuantity": {
+          "value": 11.8,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0030",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0030",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Haemoglobin",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Haemoglobin"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 10.9,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0041",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0041",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Haemoglobin",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Haemoglobin"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-08",
+        "valueQuantity": {
+          "value": 10.6,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0053",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0053",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Haemoglobin",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Haemoglobin"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "effectiveDateTime": "2025-06-16",
+        "valueQuantity": {
+          "value": 11.2,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0062",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0062",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Haemoglobin",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Haemoglobin"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0006"
+        },
+        "effectiveDateTime": "2026-02-23",
+        "valueQuantity": {
+          "value": 11.0,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0071",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0071",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Haemoglobin",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Haemoglobin"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0007"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueQuantity": {
+          "value": 11.3,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "L"
+              }
+            ],
+            "text": "Flag as supplied by the source system"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0038",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0038",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Body temperature",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8310-5",
+              "display": "Body temperature"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 38.2,
+          "unit": "\u00b0C",
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0046",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0046",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Body temperature",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8310-5",
+              "display": "Body temperature"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-08",
+        "valueQuantity": {
+          "value": 36.9,
+          "unit": "\u00b0C",
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0007",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0007",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Diastolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "effectiveDateTime": "2023-02-06",
+        "valueQuantity": {
+          "value": 86.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0017",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0017",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Diastolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "effectiveDateTime": "2023-08-21",
+        "valueQuantity": {
+          "value": 84.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0025",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0025",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Diastolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "effectiveDateTime": "2024-03-11",
+        "valueQuantity": {
+          "value": 90.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0035",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0035",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Diastolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 70.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0056",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0056",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Diastolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "effectiveDateTime": "2025-06-16",
+        "valueQuantity": {
+          "value": 82.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0066",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0066",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Diastolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0006"
+        },
+        "effectiveDateTime": "2026-02-23",
+        "valueQuantity": {
+          "value": 80.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0074",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0074",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Diastolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0007"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueQuantity": {
+          "value": 78.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0006",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0006",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Systolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "effectiveDateTime": "2023-02-06",
+        "valueQuantity": {
+          "value": 148.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0016",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0016",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Systolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "effectiveDateTime": "2023-08-21",
+        "valueQuantity": {
+          "value": 144.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0024",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0024",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Systolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "effectiveDateTime": "2024-03-11",
+        "valueQuantity": {
+          "value": 152.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0034",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0034",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Systolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 118.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0055",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0055",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Systolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "effectiveDateTime": "2025-06-16",
+        "valueQuantity": {
+          "value": 138.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0065",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0065",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Systolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0006"
+        },
+        "effectiveDateTime": "2026-02-23",
+        "valueQuantity": {
+          "value": 136.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0073",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0073",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Systolic blood pressure",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0007"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueQuantity": {
+          "value": 132.0,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0008",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0008",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Heart rate",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "effectiveDateTime": "2023-02-06",
+        "valueQuantity": {
+          "value": 78.0,
+          "unit": "bpm",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0018",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0018",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Heart rate",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "effectiveDateTime": "2023-08-21",
+        "valueQuantity": {
+          "value": 76.0,
+          "unit": "bpm",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0026",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0026",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Heart rate",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "effectiveDateTime": "2024-03-11",
+        "valueQuantity": {
+          "value": 80.0,
+          "unit": "bpm",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0036",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0036",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Heart rate",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "valueQuantity": {
+          "value": 96.0,
+          "unit": "bpm",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0057",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0057",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Heart rate",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "effectiveDateTime": "2025-06-16",
+        "valueQuantity": {
+          "value": 74.0,
+          "unit": "bpm",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0067",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0067",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Heart rate",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0006"
+        },
+        "effectiveDateTime": "2026-02-23",
+        "valueQuantity": {
+          "value": 72.0,
+          "unit": "bpm",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/OBS-0075",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OBS-0075",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-ehr-vital-signs"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Heart rate",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "status": "final",
+        "encounter": {
+          "reference": "Encounter/ENC-0007"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueQuantity": {
+          "value": 70.0,
+          "unit": "bpm",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MED-0001",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MED-0001",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-prescribing-system"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "text": "Ramipril"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "authoredOn": "2013-01-10",
+        "dosageInstruction": [
+          {
+            "text": "5 mg oral once daily",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2013-01-10"
+                }
+              }
+            }
+          }
+        ],
+        "reasonCode": [
+          {
+            "text": "Hypertension"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MED-0002",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MED-0002",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-prescribing-system"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "text": "Atorvastatin"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "authoredOn": "2016-06-01",
+        "dosageInstruction": [
+          {
+            "text": "20 mg oral at night",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2016-06-01"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MED-0003",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MED-0003",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-prescribing-system"
+        },
+        "status": "stopped",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "text": "Metformin"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "authoredOn": "2016-06-01",
+        "dosageInstruction": [
+          {
+            "text": "500 mg oral twice daily",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2016-06-01",
+                  "end": "2024-11-09"
+                }
+              }
+            }
+          }
+        ],
+        "reasonCode": [
+          {
+            "text": "Type 2 diabetes mellitus"
+          }
+        ],
+        "note": [
+          {
+            "text": "Dose reduced at discharge 9 Nov 2024; see next record."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MED-0004",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MED-0004",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-prescribing-system"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "text": "Metformin"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "authoredOn": "2024-11-09",
+        "dosageInstruction": [
+          {
+            "text": "500 mg oral once daily",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2024-11-09"
+                }
+              }
+            }
+          }
+        ],
+        "reasonCode": [
+          {
+            "text": "Type 2 diabetes mellitus"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MED-0005",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MED-0005",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-prescribing-system"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "text": "Amlodipine"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "authoredOn": "2024-03-11",
+        "dosageInstruction": [
+          {
+            "text": "5 mg oral once daily",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2024-03-11"
+                }
+              }
+            }
+          }
+        ],
+        "reasonCode": [
+          {
+            "text": "Hypertension"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MED-0006",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MED-0006",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-prescribing-system"
+        },
+        "status": "completed",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "text": "Amoxicillin"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "authoredOn": "2024-11-04",
+        "dosageInstruction": [
+          {
+            "text": "500 mg oral three times daily",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2024-11-04",
+                  "end": "2024-11-09"
+                }
+              }
+            }
+          }
+        ],
+        "reasonCode": [
+          {
+            "text": "Lower respiratory tract infection"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MED-0007",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MED-0007",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-prescribing-system"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "text": "Empagliflozin"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "authoredOn": "2025-06-16",
+        "dosageInstruction": [
+          {
+            "text": "10 mg oral once daily",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2025-06-16"
+                }
+              }
+            }
+          }
+        ],
+        "reasonCode": [
+          {
+            "text": "Type 2 diabetes mellitus"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Procedure/PRO-0001",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "PRO-0001",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Diabetic retinal screening"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "performedDateTime": "2023-03-02"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Procedure/PRO-0002",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "PRO-0002",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-radiology-system"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Chest X-ray",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "399208008",
+              "display": "Chest X-ray"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "performedDateTime": "2024-11-04",
+        "note": [
+          {
+            "text": "See linked imaging report."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Procedure/PRO-0003",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "PRO-0003",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-radiology-system"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Renal tract ultrasound"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "performedDateTime": "2023-09-12",
+        "note": [
+          {
+            "text": "See linked imaging report."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DocumentReference/DOC-0001",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DOC-0001",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "current",
+        "type": {
+          "text": "Clinical note"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "description": "Diabetes clinic note",
+        "date": "2023-02-06",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "title": "Diabetes clinic note",
+              "data": "Q2xpbmljIG5vdGUgKHN5bnRoZXRpYykuIEFubnVhbCBkaWFiZXRlcyByZXZpZXcuIE9ic2VydmF0aW9ucyBhbmQgbGFib3JhdG9yeSByZXN1bHRzIGZyb20gdGhpcyB2aXNpdCBhcmUgcmVjb3JkZWQgc2VwYXJhdGVseS4="
+            }
+          }
+        ],
+        "context": {
+          "encounter": [
+            {
+              "reference": "Encounter/ENC-0001"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DocumentReference/DOC-0002",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DOC-0002",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "current",
+        "type": {
+          "text": "Clinical note"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "description": "Diabetes clinic note",
+        "date": "2023-08-21",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "title": "Diabetes clinic note",
+              "data": "Q2xpbmljIG5vdGUgKHN5bnRoZXRpYykuIENyZWF0aW5pbmUgYW5kIGVHRlIgcmVjb3JkZWQgYmVsb3cgdGhlIGxhYm9yYXRvcnkncyByZWZlcmVuY2UgbGltaXRzLiBDb25kaXRpb24gcmVjb3JkZWQ6IGNocm9uaWMga2lkbmV5IGRpc2Vhc2Ugc3RhZ2UgMy4="
+            }
+          }
+        ],
+        "context": {
+          "encounter": [
+            {
+              "reference": "Encounter/ENC-0002"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DocumentReference/DOC-0003",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DOC-0003",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "current",
+        "type": {
+          "text": "Clinical note"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "description": "General medicine clinic note",
+        "date": "2024-03-11",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "title": "General medicine clinic note",
+              "data": "Q2xpbmljIG5vdGUgKHN5bnRoZXRpYykuIEJsb29kIHByZXNzdXJlIHJldmlld2VkLiBBbWxvZGlwaW5lIDUgbWcgb25jZSBkYWlseSBzdGFydGVkIGF0IHRoaXMgdmlzaXQu"
+            }
+          }
+        ],
+        "context": {
+          "encounter": [
+            {
+              "reference": "Encounter/ENC-0003"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0004",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0004",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-radiology-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "RAD",
+                "display": "Radiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Chest X-ray report"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "conclusion": "Chest X-ray (synthetic report). Right lower zone consolidation described. No pleural effusion described."
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DocumentReference/DOC-0005",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DOC-0005",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "current",
+        "type": {
+          "text": "Discharge summary"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "description": "Discharge summary - admission 4 to 9 Nov 2024",
+        "date": "2024-11-09",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "title": "Discharge summary - admission 4 to 9 Nov 2024",
+              "data": "RGlzY2hhcmdlIHN1bW1hcnkgKHN5bnRoZXRpYykuIEFkbWl0dGVkIHdpdGggYSBsb3dlciByZXNwaXJhdG9yeSB0cmFjdCBpbmZlY3Rpb24uIEFtb3hpY2lsbGluIGNvdXJzZSBjb21wbGV0ZWQgaW4gaG9zcGl0YWwuIENyZWF0aW5pbmUgd2FzIGhpZ2hlciB0aGFuIHRoZSBwcmV2aW91cyBjbGluaWMgdmFsdWUgb24gYWRtaXNzaW9uIGFuZCBsb3dlciBhdCBkaXNjaGFyZ2UgKHZhbHVlcyBpbiBsYWJvcmF0b3J5IHJlcG9ydHMpLiBNZXRmb3JtaW4gZG9zZSByZWR1Y2VkIHRvIDUwMCBtZyBvbmNlIGRhaWx5IGF0IGRpc2NoYXJnZS4gUmVwZWF0IGtpZG5leSBmdW5jdGlvbiBibG9vZCB0ZXN0IHJlcXVlc3RlZCBhZnRlciBkaXNjaGFyZ2Uu"
+            }
+          }
+        ],
+        "context": {
+          "encounter": [
+            {
+              "reference": "Encounter/ENC-0004"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DocumentReference/DOC-0006",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DOC-0006",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "current",
+        "type": {
+          "text": "Clinical note"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "description": "Diabetes clinic note",
+        "date": "2025-06-16",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "title": "Diabetes clinic note",
+              "data": "Q2xpbmljIG5vdGUgKHN5bnRoZXRpYykuIEVtcGFnbGlmbG96aW4gMTAgbWcgb25jZSBkYWlseSBzdGFydGVkIGF0IHRoaXMgdmlzaXQu"
+            }
+          }
+        ],
+        "context": {
+          "encounter": [
+            {
+              "reference": "Encounter/ENC-0005"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DocumentReference/DOC-0007",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DOC-0007",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "current",
+        "type": {
+          "text": "Clinical note"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "description": "Renal clinic note",
+        "date": "2026-02-23",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "title": "Renal clinic note",
+              "data": "Q2xpbmljIG5vdGUgKHN5bnRoZXRpYykuIEtpZG5leSBmdW5jdGlvbiByZXZpZXdlZC4gTm8gbWVkaWNhdGlvbiBjaGFuZ2VzIGRvY3VtZW50ZWQgYXQgdGhpcyB2aXNpdC4="
+            }
+          }
+        ],
+        "context": {
+          "encounter": [
+            {
+              "reference": "Encounter/ENC-0006"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DocumentReference/DOC-0008",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DOC-0008",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-hospital-ehr"
+        },
+        "status": "current",
+        "type": {
+          "text": "Clinical note"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "description": "Diabetes clinic note",
+        "date": "2026-10-19",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "title": "Diabetes clinic note",
+              "data": "Q2xpbmljIG5vdGUgKHN5bnRoZXRpYykuIFJvdXRpbmUgcmV2aWV3LiBQbGFuIGFzIGRvY3VtZW50ZWQ6IHJlcGVhdCBjcmVhdGluaW5lIGFuZCBlR0ZSIGluIDMgbW9udGhzOyBraWRuZXkgY2xpbmljIHJldmlldyBpbiA2IG1vbnRoczsgcmV0aW5hbCBzY3JlZW5pbmcgdG8gYmUgYXJyYW5nZWQu"
+            }
+          }
+        ],
+        "context": {
+          "encounter": [
+            {
+              "reference": "Encounter/ENC-0007"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0009",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0009",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-radiology-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "RAD",
+                "display": "Radiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Renal tract ultrasound report"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "effectiveDateTime": "2023-09-12",
+        "conclusion": "Ultrasound of the kidneys (synthetic report). Report text not itemised in this synthetic dataset."
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0028",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0028",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Laboratory report 2023-02-06"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0001"
+        },
+        "effectiveDateTime": "2023-02-06",
+        "result": [
+          {
+            "reference": "Observation/OBS-0001"
+          },
+          {
+            "reference": "Observation/OBS-0005"
+          },
+          {
+            "reference": "Observation/OBS-0003"
+          },
+          {
+            "reference": "Observation/OBS-0002"
+          },
+          {
+            "reference": "Observation/OBS-0004"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0030",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0030",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Laboratory report 2023-08-21"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0002"
+        },
+        "effectiveDateTime": "2023-08-21",
+        "result": [
+          {
+            "reference": "Observation/OBS-0010"
+          },
+          {
+            "reference": "Observation/OBS-0014"
+          },
+          {
+            "reference": "Observation/OBS-0015"
+          },
+          {
+            "reference": "Observation/OBS-0012"
+          },
+          {
+            "reference": "Observation/OBS-0011"
+          },
+          {
+            "reference": "Observation/OBS-0013"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0031",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0031",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Laboratory report 2024-03-11"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0003"
+        },
+        "effectiveDateTime": "2024-03-11",
+        "result": [
+          {
+            "reference": "Observation/OBS-0019"
+          },
+          {
+            "reference": "Observation/OBS-0023"
+          },
+          {
+            "reference": "Observation/OBS-0021"
+          },
+          {
+            "reference": "Observation/OBS-0020"
+          },
+          {
+            "reference": "Observation/OBS-0022"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0035",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0035",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Laboratory report 2024-11-04"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-04",
+        "result": [
+          {
+            "reference": "Observation/OBS-0032"
+          },
+          {
+            "reference": "Observation/OBS-0028"
+          },
+          {
+            "reference": "Observation/OBS-0031"
+          },
+          {
+            "reference": "Observation/OBS-0029"
+          },
+          {
+            "reference": "Observation/OBS-0033"
+          },
+          {
+            "reference": "Observation/OBS-0030"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0036",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0036",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Laboratory report 2024-11-08"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0004"
+        },
+        "effectiveDateTime": "2024-11-08",
+        "result": [
+          {
+            "reference": "Observation/OBS-0043"
+          },
+          {
+            "reference": "Observation/OBS-0039"
+          },
+          {
+            "reference": "Observation/OBS-0042"
+          },
+          {
+            "reference": "Observation/OBS-0040"
+          },
+          {
+            "reference": "Observation/OBS-0044"
+          },
+          {
+            "reference": "Observation/OBS-0041"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0037",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0037",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Laboratory report 2025-01-06"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "effectiveDateTime": "2025-01-06",
+        "result": [
+          {
+            "reference": "Observation/OBS-0047"
+          },
+          {
+            "reference": "Observation/OBS-0049"
+          },
+          {
+            "reference": "Observation/OBS-0048"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0041",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0041",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Laboratory report 2025-06-16"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0005"
+        },
+        "effectiveDateTime": "2025-06-16",
+        "result": [
+          {
+            "reference": "Observation/OBS-0050"
+          },
+          {
+            "reference": "Observation/OBS-0054"
+          },
+          {
+            "reference": "Observation/OBS-0052"
+          },
+          {
+            "reference": "Observation/OBS-0051"
+          },
+          {
+            "reference": "Observation/OBS-0053"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0047",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0047",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Laboratory report 2026-02-23"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0006"
+        },
+        "effectiveDateTime": "2026-02-23",
+        "result": [
+          {
+            "reference": "Observation/OBS-0059"
+          },
+          {
+            "reference": "Observation/OBS-0063"
+          },
+          {
+            "reference": "Observation/OBS-0064"
+          },
+          {
+            "reference": "Observation/OBS-0061"
+          },
+          {
+            "reference": "Observation/OBS-0060"
+          },
+          {
+            "reference": "Observation/OBS-0062"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/DOC-0054",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DOC-0054",
+        "meta": {
+          "source": "urn:careflow:source:synthetic-laboratory-system"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Laboratory report 2026-10-19"
+        },
+        "subject": {
+          "reference": "Patient/SYN-0001"
+        },
+        "encounter": {
+          "reference": "Encounter/ENC-0007"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "result": [
+          {
+            "reference": "Observation/OBS-0068"
+          },
+          {
+            "reference": "Observation/OBS-0072"
+          },
+          {
+            "reference": "Observation/OBS-0070"
+          },
+          {
+            "reference": "Observation/OBS-0069"
+          },
+          {
+            "reference": "Observation/OBS-0071"
+          }
+        ]
+      }
+    }
+  ]
+}
