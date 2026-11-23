@@ -1,5 +1,7 @@
 # CareFlow — Clinical Timeline & Handover Intelligence
 
+![Clinical Trends page showing creatinine over time](assets/trends.png)
+
 An **educational and research prototype** that shows how a clinician could navigate a patient's longitudinal records,
 review trends, prepare an editable handover draft and trace every generated statement back to its source record.
 
