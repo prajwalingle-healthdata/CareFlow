@@ -137,3 +137,12 @@ Python packaging and modular design · SQLite schema design and SQL · pandas da
 ## 10. What to learn next
 
 Python basics (functions, dicts, lists) → pandas (`DataFrame`, filtering, `groupby`) → SQL (`SELECT`, `JOIN`) → Streamlit (widgets, `session_state`) → Plotly → HL7 FHIR basics (Patient, Encounter, Observation) and LOINC/SNOMED → pytest → clinical informatics literature on handover and usability evaluation (SUS, NASA-TLX).
+## What I learned
+
+- **Systems and scale:** A well-structured system can reduce problems with patient information. But building one system for a single hospital is very different from connecting a whole country's healthcare. Different organisations record the same information in different ways, which is why shared standards such as FHIR matter.
+- **Technical:** I learned how to set up a Python virtual environment, which keeps a project's packages separate from the rest of the computer so the app runs the same way each time.
+
+## What I want to do next
+
+- Check the FHIR export with the official HL7 FHIR validator.
+- With ethical approval and data-protection safeguards in place, ask clinicians to test CareFlow and give feedback on how it would work in real hospital settings. This prototype has only used synthetic data and has not been clinically validated.
