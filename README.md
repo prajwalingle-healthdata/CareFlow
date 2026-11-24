@@ -2,6 +2,20 @@
 
 ![Clinical Trends page showing creatinine over time](assets/trends.png)
 
+## Screenshots
+
+**Overview**
+
+![Overview page](assets/overview.png)
+
+**Clinical Summary with source traceability**
+
+![Clinical Summary page](assets/summary.png)
+
+**Handover Builder (editable draft)**
+
+![Handover Builder page](assets/handover.png)
+
 An **educational and research prototype** that shows how a clinician could navigate a patient's longitudinal records,
 review trends, prepare an editable handover draft and trace every generated statement back to its source record.
 
